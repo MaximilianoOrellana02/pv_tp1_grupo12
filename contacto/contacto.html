@@ -6,13 +6,24 @@
   <body>
     <h1>FORMULARIO DE CONTACTO</h1>
     <label><h2>Registro</h2></label> <br />
-    <form action="#">
+    <form action="#" method="post">
       <label for="name">Nombre </label>
-      <input type="text" id="nombre" /><br />
+      <input type="text" id="nombre" required/><br />
       <label for="documento">Documento </label>
-      <input type="number" id="documento" /><br />
+      <input type="number" id="documento" required/><br />
       <label for="fechadenac">Fecha de Nacimiento </label>
-      <input type="date" id="fechadenac" /><br />
+      <input type="date" id="fechadenac" required/><br />
+      <label for="email">Correo Electrónico:</label>
+      <input type="email" id="email" required><br><br>
+      <label for="sexo">Sexo</label>
+        <input type="radio"name="sexo"/>Fem
+        <input type="radio"name="sexo"/>Masc
+        <input type="radio"name=""sexo/>Otro
+        <br><br>
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+        
+        <input type="submit" value="Enviar">
     </form>
   </body>
 </html>
