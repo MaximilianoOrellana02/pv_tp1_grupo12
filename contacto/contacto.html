@@ -2,11 +2,17 @@
 <html lang="es">
   <head>
     <title>Formulario</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta charset="UTF-8" />
   </head>
   <body>
-    <h1>FORMULARIO DE CONTACTO</h1>
-    <label><h2>Registro</h2></label> <br />
-    <form action="#" method="post">
+    <div class="titulo">
+      <h1>Formulario de Contacto</h1>
+      <p>Por favor, completa el siguiente formulario.</p>
+    </div>
+    <div class="form_container">
+    <form action="#" method="post" >
+      <h2>Registro</h2>
       <label for="name">Nombre </label>
       <input type="text" id="nombre" required/><br />
       <label for="documento">Documento </label>
@@ -15,15 +21,21 @@
       <input type="date" id="fechadenac" required/><br />
       <label for="email">Correo Electrónico:</label>
       <input type="email" id="email" required><br><br>
-      <label for="sexo">Sexo</label>
-        <input type="radio"name="sexo"/>Fem
-        <input type="radio"name="sexo"/>Masc
-        <input type="radio"name=""sexo/>Otro
-        <br><br>
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
-        
-        <input type="submit" value="Enviar">
+      <div class="sexo">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="sexo" value="femenino" required>
+        <label for="femenino">Femenino</label><br>
+        <input type="radio" id="otro" name="sexo" value="otro" required>
+        <label for="otro">Otro</label><br>
+        <input type="radio" id="prefiero_no_decir" name="sexo" value="prefiero_no_decir" required>
+      
+        </label>
+      </div>
+      <br><br>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
+      <input type="submit" value="Enviar" class="btn_enviar" />
     </form>
+  </div>
   </body>
 </html>
