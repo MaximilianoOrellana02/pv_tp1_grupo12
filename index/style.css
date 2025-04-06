@@ -1,0 +1,24 @@
+main {
+    display: flex;
+}
+header{
+    text-align: center;
+}
+body {
+    background-color: rgb(255, 255, 255);
+    background-image: url(https://as2.ftcdn.net/v2/jpg/09/75/58/75/1000_F_975587564_HjK3J1rgyNjxDbPAQYRuki8UAJh8qca0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+article{
+    width:75% ;
+    background-color: rgb(148, 193, 231);
+    
+}
+
+nav{
+    width: 30%;
+    background-color: rgb(148, 193, 231);
+}
