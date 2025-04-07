@@ -160,34 +160,20 @@ body {
     text-align: justify;
 }
 
-.info button {
-    background-color: #74acdf;
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-}
-
-.info-derecha button {
-    background-color: #74acdf;
-    font-size: 20px;
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-}
-
-.info button:hover {
-    background-color: #3399ff;
-    transform: scale(1.05);
-    transition: all 0.3s;
-}
-
-button a{
-    color: #ffffff;
+.museos-regiones a {
     text-decoration: none;
-    font-size: 25px;
+    color: #232d4f;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.museos-regiones  a:hover {
+    background-color: #dba55a;
+    color: #ffffff;
+    transition: all 0.3s;
 }
 
 .museos-regiones img {
@@ -248,18 +234,19 @@ button a{
     margin: 20px;
 }
 
-.museos-regiones-nea button {
+.museos-regiones-nea a {
+    text-decoration: none;
+    padding: 10px 20px;
     background-color: #232d4f;
+    color: #ffffff;
     font-size: 20px;
-    width: 150px;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+
 }
 
-.museos-regiones-nea button:hover {
-    background-color: #25397b;
-    transform: scale(1.05);
+.museos-regiones-nea a:hover {
+    background-color: #314ca7;
     transition: all 0.3s;
 }
 
