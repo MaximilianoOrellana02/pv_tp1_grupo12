@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <meta charset="UTF-8" />
-  </head>
-  <body>
-    <div class="titulo">
-      <h1>Formulario de Contacto</h1>
-      <p>Por favor, completa el siguiente formulario.</p>
-    </div>
-    <div class="form_container">
-    <form action="#" method="post" >
-      <h2>Registro</h2>
-      <label for="name">Nombre </label>
-      <input type="text" id="nombre" required/><br />
-      <label for="documento">Documento </label>
-      <input type="number" id="documento" required/><br />
-      <label for="fechadenac">Fecha de Nacimiento </label>
-      <input type="date" id="fechadenac" required/><br />
-      <label for="email">Correo Electrónico:</label>
-      <input type="email" id="email" required><br><br>
-      <div class="sexo">
-        <label for="masculino">Masculino</label><br>
-        <input type="radio" id="femenino" name="sexo" value="femenino" required>
-        <label for="femenino">Femenino</label><br>
-        <input type="radio" id="otro" name="sexo" value="otro" required>
-        <label for="otro">Otro</label><br>
-        <input type="radio" id="prefiero_no_decir" name="sexo" value="prefiero_no_decir" required>
-      
-        </label>
-      </div>
-      <br><br>
-      <label for="mensaje">Mensaje:</label><br>
-      <textarea id="mensaje" name="mensaje" rows="4"></textarea><br><br>
-      <input type="submit" value="Enviar" class="btn_enviar" />
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>
+            FORMULARIO DE CONTACTO
+        </h2>
+        <div class="form_input">
+            <label>Nombre completo</label>
+            <input type="text" placeholder="Christian Guari">
+        </div>
+        <div class="form_input">
+            <label>Documento</label>
+            <input type="number" placeholder="123121212">
+        </div>
+        <div class="form_input">
+            <label>Email</label>
+            <input type="email" placeholder="ejemplo@gmail.com">
+        </div>
+        <div class="form_input">
+            <label>Fecha</label>
+            <input type="date">
+        </div>
+        <div class="form_input">
+            <label>Masculino</label>
+            <input type="radio" name="sexo">
+            <label>Femenino</label>
+            <input type="radio" name="sexo">
+            <label>Otro</label>
+            <input type="radio" name="sexo">
+        </div>
+        <div class="form_input">
+            <label>Mensaje</label>
+            <textarea placeholder="Deja un mensaje"></textarea>
+        </div>
+        <input type="submit" value="Enviar" class="btn_enviar">
     </form>
-  </div>
-  <nav>
-    <a href="../index/index.html">Volver</a>
-  </nav>
-  </body>
+</body>
 </html>
