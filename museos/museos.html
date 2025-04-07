@@ -3,44 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0a402da964.js" crossorigin="anonymous"></script>
     <title>Museos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-        <header>
-            <h1> A continuacion, mostraremos una lista de distintos museos del mundo</h1>
-            <nav>
-                <ul>
-                    <li> <a href="#Museo1"> Museo Britanico </a> </li>
-                    <li> <a href="#Museo2"> Museo de Louvre </a> </li>
-                    <li> <a href="#Museo3"> Museo Metropolitano de Arte </a> </li>
-                </ul>
-            </nav>
-        </header>
-    <section class="Museos">
-            <article class="Museo1" id="Museo1">
-                <h2> Museo Britanico</h2>
-                <img src="https://cdn.londonandpartners.com/asset/british-museum_museum-frontage-image-courtesy-of-the-british-museum_f0b0a5a3c53f8fc1564868c561bd167c.jpg" alt="Museo Britanico">
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quae fugiat magnam similique dolore architecto vitae, animi perspiciatis mollitia iusto, quisquam, a veritatis distinctio ipsam quidem ex accusantium atque minus!</p>
-                <a href="https://es.wikipedia.org/wiki/Museo_Brit%C3%A1nico">Wikipedia</a>
+    <header class="header">
+        <div class="header-logo">
+            <i class="fa-solid fa-building-columns"></i>
+            <h1>Museos</h1>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="../index/index.html">Inicio</a></li>
+                <li>
+                    <a href="#">Museos <i class="fa-solid fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="#noa">🌄 Noroeste Argentino (NOA)</a></li>
+                        <li><a href="#nea">🌿 Nordeste Argentino (NEA)</a></li>
+                        <li><a href="#cuyo">🍷 Región de Cuyo</a></li>
+                        <li><a href="#pampa">🌾 Región Pampeana</a></li>
+                        <li><a href="#amba">🏙️ Área Metropolitana de Buenos Aires (AMBA)</a></li>
+                        <li><a href="#patagonia">❄️ Región Patagónica</a></li>
+                    </ul>
+                </li>
+                <li><a href="../contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="museos-main">
+        <section class="museos-intro">
+            <div class="subtitulo">
+                <h2>Descubre los Museos de Argentina</h2>
+                <p>Argentina es un país rico en cultura e historia, y sus museos son un reflejo de esta diversidad. Desde arte contemporáneo hasta historia natural, cada museo ofrece una experiencia única.</p>
+            </div>
+            <div class="museo-imagen">
+                <img src="img/Flag_of_Argentina.svg.webp" alt="">
+            </div>
+        </section>
+
+        <section class="museos-regiones" id="noa">
+            <h2>Noroeste Argentino (NOA)</h2>
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo de Arqueología de Alta Montaña (MAAM) - Salta
+                    </h3>
+                    <p>El MAAM fue inaugurado en 2004 y su fama internacional se debe en gran parte al descubrimiento de los Niños del Llullaillaco, tres niños incas momificados hallados en 1999 en la cima del volcán Llullaillaco, a más de 6.700 metros de altitud. Estas momias están increíblemente conservadas debido a las condiciones extremas del lugar, y son consideradas uno de los hallazgos arqueológicos más importantes del mundo.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_de_Arqueolog%C3%ADa_de_Alta_Monta%C3%B1a_de_Salta" target="_blank" >Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/Museo_de_Arqueología_de_Alta_Montaña.jpg" alt="Museo de Arqueología de Alta Montaña (MAAM)">
+                </div>
             </article>
-            <article class="museo2" id="Museo2">
-                <h2>Museo del Louvre</h2>
-                <img src="https://cdn-3.expansion.mx/dims4/default/d0fcdf5/2147483647/strip/true/crop/4752x2495+0+337/resize/1200x630!/format/jpg/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fc2%2F5b%2F0632c31b4029a282a190d5d5c1cd%2Fistock-482761983.jpg" alt="Museo del Louvre" >
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo a placeat quia deleniti provident ducimus, repellendus consequatur similique! Delectus repellat animi, laudantium minus magnam minima amet aspernatur eveniet excepturi nostrum!</P>
-                <a href="https://es.wikipedia.org/wiki/Museo_del_Louvre">Wikipedia</a>
+
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/museo-lavalle.webp" alt="Museo Histórico J.G. Lavalle">
+                </div>
+
+                <div class="info">
+                    <h3>Museo Histórico J.G. Lavalle - Jujuy</h3>
+                    <p>Este museo ocupa una casa colonial del siglo XVIII, de gran valor histórico, ya que fue el lugar donde murió el general Juan Galo Lavalle en 1841, tras recibir una herida en combate durante las guerras civiles argentinas. El museo se centra tanto en la figura de Lavalle como en el contexto histórico de la región durante el siglo XIX.    
+                    </p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_Juan_Galo_Lavalle" target="_blank">Saber Mas</a></button>
+                </div>
             </article>
-            <article class="museo3" id="Museo3" >
-                <h2>Museo Metropolitano de Arte</h2>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1200px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg" alt="Museo Metropolitano de Arte" >
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo a placeat quia deleniti provident ducimus, repellendus consequatur similique! Delectus repellat animi, laudantium minus magnam minima amet aspernatur eveniet excepturi nostrum!</P>
-                <a href="https://es.wikipedia.org/wiki/Museo_Metropolitano_de_Arte">Wikipedia</a>
+
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo Pachamama - Tucumán
+                    </h3>
+                    <p>El museo fue ideado y construido por el artista Héctor Cruz, de origen diaguita-calchaquí, y se inauguró en 1996. No es un museo tradicional: está diseñado como una obra de arte integral, donde arquitectura, escultura, pintura y paisaje se funden con la naturaleza del valle. Está dedicado a la Pachamama, figura central en las creencias de los pueblos originarios del altiplano y los Valles Calchaquíes, símbolo de fertilidad, vida y respeto por la tierra.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_Pachamama_(Amaicha_del_Valle)" target="_blank">Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/images.jpg" alt="Museo Pachamama">
+                </div>
             </article>
-    </section>
+        </section>
+
+        <section class="museos-regiones-nea" id="nea">
+            <h2>Nordeste Argentino (NEA)</h2>
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/murales-en-fachada.jpg" alt="Museo del Hombre Chaqueño - Chaco">
+                </div>
+
+                <div class="info">
+                    <h3>Museo del Hombre Chaqueño - Chaco</h3>
+                    <p>Este museo rinde homenaje a la identidad multicultural del Chaco, un crisol de tradiciones indígenas, criollas, migrantes y rurales. Lleva el nombre de Ertivio Acosta, un destacado historiador, poeta y defensor de la cultura regional.</p>
+                    <button><a href="https://museohombrechaco.blogspot.com/" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo Regional Aníbal Cambas - Misiones</h3>
+                    <p>El Museo Regional Aníbal Cambas, ubicado en la ciudad de Posadas, provincia de Misiones (Argentina), es uno de los museos históricos y etnográficos más importantes del noreste argentino. Su misión es conservar y difundir la historia, arqueología y cultura regional de Misiones y de toda la cuenca del río Paraná.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_Hist%C3%B3rico_Regional_(Formosa)" target="_blank">Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/misiones.jpg" alt="Museo Regional Aníbal Cambas - Misiones">
+                </div>
+            </article>
+
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/memoria.webp" alt="Museo de la Memoria" alt="Museo de la Memoria - Corrientes">
+                </div>
+
+                <div class="info">
+                    <h3>Museo de la Memoria - Corrientes</h3>
+                    <p>Este museo funciona en el edificio que fue el Centro Clandestino de Detención, Tortura y Exterminio (CCDTyE) “Ex D.I.P.P.B.A.”, uno de los tantos sitios donde se violaron los derechos humanos durante la dictadura.Fue reconvertido en espacio de memoria, para reconocer, visibilizar y educar sobre lo que sucedió, y así promover la no repetición.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_Hist%C3%B3rico_Regional_(Formosa)" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="museos-regiones" id="cuyo">
+            <h2 id="cuyo">Región de Cuyo</h2>
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo Nacional del Vino y la Vendimia - Mendoza</h3>
+                    <p>El Museo Nacional del Vino y la Vendimia, ubicado en Maipú, Mendoza, es uno de los espacios culturales más representativos de la identidad vitivinícola argentina. Es un homenaje a la tradición del vino, la vendimia y el trabajo de las generaciones que hicieron de Mendoza una de las capitales mundiales del vino</p>
+                    <button><a href="https://maipumdz.tur.ar/recorrido/museo-nacional-del-vino-y-la-vendimia/" target="_blank" >Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/Museo-del-Vino-y-la-Vendimia-1024x562.jpeg" alt="Museo Nacional del Vino y la Vendimia - Mendoza">
+                </div>
+            </article>
+
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/MUSEO-SANTIAGO-GRAFFIGNA-010.jpg" alt="Museo Santiago Graffigna - San Juan">
+                </div>
+
+                <div class="info">
+                    <h3>Museo Santiago Graffigna - San Juan</h3>
+                    <p>Este museo ocupa una casa colonial del siglo XVIII, de gran valor histórico, ya que fue el lugar donde murió el general Juan Galo Lavalle en 1841, tras recibir una herida en combate durante las guerras civiles argentinas. El museo se centra tanto en la figura de Lavalle como en el contexto histórico de la región durante el siglo XIX.    
+                    </p>
+                    <button><a href="https://sisanjuan.gob.ar/23-turismo-y-cultura/2024-01-22/53685-el-historico-museo-santiago-graffigna-reabrio-sus-puertas-al-publico" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo de la Poesía Manuscrita Juan Crisóstomo Lafinur - San Luis</h3>
+                    <p>El Museo de la Poesía Manuscrita "Juan Crisóstomo Lafinur", ubicado en La Carolina, provincia de San Luis, es un espacio único que rinde homenaje no solo a Lafinur, uno de los precursores de la poesía y el pensamiento argentino, sino también a la palabra escrita como patrimonio cultural.</p>
+                    <button><a href="https://lacarolinasanluis.com.ar/que-hacer/museo-de-la-poesia/" target="_blank">Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img//LA-CAROLINA-MUSEO-DE-LA-POESIA_.jpg" alt="Museo de la Poesía Manuscrita Juan Crisóstomo Lafinur - San Luis">
+                </div>
+            </article>
+        </section>
+
+        <section class="museos-regiones-nea" id="pampa">
+            <h2 >Región Pampeana</h2>
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/museo-inmigracion-muntref-1500x610-fachada.jpg" alt="Museo del Inmigrante - Buenos Aires">
+                </div>
+
+                <div class="info">
+                    <h3>Museo del Inmigrante - Buenos Aires</h3>
+                    <p>El Museo de la Inmigración (también conocido como Museo del Inmigrante) está ubicado en la ciudad de Buenos Aires, y es uno de los espacios más emotivos y representativos de la historia argentina. Funciona dentro del histórico Hotel de Inmigrantes, en el barrio de Retiro, junto al río.</p>
+                    <button><a href="https://untref.edu.ar/muntref/es/museo-de-la-inmigracion/" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo Histórico 17 de Octubre - Buenos Aires</h3>
+                    <p>El Museo Histórico 17 de Octubre, ubicado en la localidad de San Vicente, provincia de Buenos Aires, es un sitio emblemático para la memoria del peronismo y la historia política argentina del siglo XX. Se encuentra en la Quinta de San Vicente, residencia de descanso del general Juan Domingo Perón.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_Hist%C3%B3rico_Regional_(Formosa)" target="_blank">Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/17octubre.jpg" alt="Museo Histórico 17 de Octubre">
+                </div>
+            </article>
+
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/Museo_Castagnino.jpg" alt="Museo Juan Carlos Castagnino - Mar del Plata">
+                </div>
+
+                <div class="info">
+                    <h3>Museo Juan Carlos Castagnino - Mar del Plata</h3>
+                    <p>El museo lleva el nombre del pintor, ilustrador y arquitecto Juan Carlos Castagnino (1908-1972), uno de los artistas plásticos más destacados del siglo XX en Argentina. Fue inaugurado en 1980 como museo de arte, y hoy alberga una amplia colección de obras suyas y de otros artistas argentinos.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Villa_Ortiz_Basualdo" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+        </section>
+
+        <section class="museos-regiones" id="amba">
+            <h2>Área Metropolitana de Buenos Aires (AMBA)</h2>
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo Nacional de Bellas Artes
+                    </h3>
+                    <p>El MNBA fue fundado en 1896 y desde 1933 ocupa su sede actual: un edificio en el barrio de Recoleta, originalmente diseñado como pabellón de aguas. Su arquitectura funcional permite recorrer sus múltiples salas distribuidas en tres plantas.Además de sus colecciones permanentes, ofrece exposiciones temporales, actividades educativas, charlas, visitas guiadas, y mantiene una fuerte presencia en el ámbito cultural argentino.</p>
+                    <button><a href="https://www.bellasartes.gob.ar/" target="_blank" >Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/MNBA_fachada.jpg" alt="Museo Nacional de Bellas Artes">
+                </div>
+            </article>
+
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/nacional.jpg" alt="Museo Histórico Nacional">
+                </div>
+
+                <div class="info">
+                    <h3>Museo Histórico Nacional</h3>
+                    <p>Fundado en 1889, el museo tiene su sede en una antigua casona del siglo XIX en el barrio de San Telmo, uno de los más tradicionales de la ciudad. Su misión es preservar, investigar y difundir el patrimonio histórico del país, especialmente todo lo relacionado con la independencia y los primeros años de la nación.  
+                    </p>
+                    <button><a href="https://museohistoriconacional.cultura.gob.ar/" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo de Arte Moderno de Buenos Aires (MAMBA)
+                    </h3>
+                    <p>El museo fue fundado en 1956 por iniciativa del crítico y gestor cultural Rafael Squirru, con el objetivo de darle espacio y visibilidad al arte moderno argentino. Desde entonces, se ha consolidado como uno de los museos más innovadores del país. Está ubicado en una antigua fábrica reciclada en Avenida San Juan 350, en San Telmo, y su edificio fue remodelado para ofrecer salas amplias, luminosas y adaptadas a grandes instalaciones artísticas.</p>
+                    <button><a href="https://www.museum-morsbroich.de/es/el-museo/la-coleccion/?gad_source=1&gclid=CjwKCAjwzMi_BhACEiwAX4YZULB_it3aUX4e22GiLFk5gNXSqcy-OwuEAXA0zvYa7P3kegQ_mE8ktRoCaXMQAvD_BwE" target="_blank">Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/arte.jpg" alt="Museo de Arte Moderno de Buenos Aires (MAMBA)">
+                </div>
+            </article>
+        </section>
+
+        <section class="museos-regiones-nea" id="patagonia">
+            <h2>Región Patagónica</h2>
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/Museo-Fin-del-Mundo-1024x723.jpg" alt="Museo del Fin del Mundo - Tierra del Fuego">
+                </div>
+
+                <div class="info">
+                    <h3>Museo del Fin del Mundo - Tierra del Fuego</h3>
+                    <p>El Museo del Fin del Mundo, ubicado en la ciudad de Ushuaia, en la provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur, es uno de los museos más emblemáticos y únicos de Argentina. Como su nombre lo indica, se sitúa en el extremo sur del continente americano, y ofrece un recorrido fascinante por la historia natural, cultural y social de la región.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_del_Fin_del_Mundo" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+
+            <article class="info-derecha">
+                <div class="info">
+                    <h3>Museo Paleontológico Egidio Feruglio - Chubut</h3>
+                    <p>Inaugurado en 1990, el museo lleva el nombre del naturalista ítalo-argentino Egidio Feruglio, pionero en los estudios geológicos de la Patagonia. El MEF no solo es un museo, sino también un centro de investigación de primer nivel, donde trabajan científicos argentinos y de todo el mundo.Su diseño moderno y sus exhibiciones interactivas lo convierten en un museo dinámico y educativo, perfecto para familias y grupos escolares.</p>
+                    <button><a href="https://es.wikipedia.org/wiki/Museo_Hist%C3%B3rico_Regional_(Formosa)" target="_blank">Saber Mas</a></button>
+                </div>
+                <div class="img">
+                    <img src="img/Museoferuglio01.jpg" alt="Museo Paleontológico Egidio Feruglio - Chubut">
+                </div>
+            </article>
+
+            <article class="info-izquierda">
+                <div class="img">
+                    <img src="img/museo-de-leleque.jpg" alt="Museo Leleque - Río Negro" >
+                </div>
+
+                <div class="info">
+                    <h3>Museo Leleque - Río Negro</h3>
+                    <p>El museo se encuentra dentro de la Estancia Leleque, en la Ruta Nacional 40, a unos 35 km de El Bolsón. Fue inaugurado en 2000 y es financiado por el grupo Benetton, que posee grandes extensiones de tierra en la zona. A pesar de la controversia en torno a su administración, el museo en sí ofrece una muestra muy cuidada sobre la historia de la Patagonia.Su arquitectura y diseño están pensados para integrarse al paisaje andino-patagónico, y sus salas se distribuyen de forma temática y cronológica.</p>
+                    <button><a href="https://www.lanacion.com.ar/turismo/museo-leleque-nid1963306/" target="_blank">Saber Mas</a></button>
+                </div>
+            </article>
+        </section>
+    </main>
     <footer>
         <p>
             &copy; 2025 Todos los derechos reservados. <br>
         </p>
-        <a href="../index/index.html">Volver</a>
+        <a href="https://github.com/MaximilianoOrellana02" target="_blank"><i class="fa-brands fa-github"></i></a>
     </footer>
 
 </body>
