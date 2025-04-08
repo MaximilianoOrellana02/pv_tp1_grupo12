@@ -1,9 +1,14 @@
 body{
-    margin: 0;
+    background-image: url(../../index/img/hector-ramon-perez-VE9gcDbwqMw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
     font-family: sans-serif;
 }
 
 h2{
+    color: rgb(0, 0, 0);
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
@@ -23,7 +28,10 @@ form{
 }
 
 .form_input{
+
+    color: rgb(0, 0, 0);
     padding: 6px 20px;
+
 }
 
 input, textarea{
@@ -46,4 +54,44 @@ textarea{
 
 label{
     line-height: 2;
+}
+
+.formu {
+    background: linear-gradient(130deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffffff;
+    padding: 60px 50px;
+    border-radius: 60px;
+    border: 2px solid rgba(255, 255, 255, 0.20);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    margin: auto 30%;
+}
+.formu form{
+    margin: auto;
+}
+
+.sexo{
+    display: flex;
+    padding: 6px 20px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    border: none;
+    background-color: #ededed;
+}
+
+.genero{
+    padding: 6px 20px;
+    margin-bottom: -10px;
+    color: black;
+}
+@media (max-width :900px){
+    .sexo{
+        flex-direction: column;
+    }
+    .formu{
+        margin: auto 5%;
+    }
 }
