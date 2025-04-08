@@ -1,5 +1,5 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -91,6 +91,11 @@ body{
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
 }
 
+main {
+    margin: 0;
+    padding: 0;
+}
+
 .cultura{
     background-color: #232d4f;
     border-top: 5px solid #cd870d;
@@ -103,7 +108,7 @@ body{
     padding: 30px 20px;
 }
 
-.titulo_cultura h1{
+.titulo_cultura h2{
     font-size: 40px;
     text-align: center;
     color: #ffffff;
@@ -113,8 +118,11 @@ body{
 .cultura .articulos {
     display: flex;
     justify-content: center;
-
 }  
+
+.cultura .articulos p{
+    text-align: justify;
+}
 
 .cultura article{
     display: flex;
@@ -141,51 +149,149 @@ body{
     align-items: center;
 }
 
-.articulos article button a{
+.cultura a {
     text-decoration: none;
     color: #ffffff;
-}
-
-.articulos article button{
-    background-color: #232d4f;;
-    border: none;
+    background-color: #232d4f;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 20px;
-    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
 }
 
-.articulos article button:hover{
-    background-color: #cd870d;
+.cultura a:hover {
+    transform: scale(1.1);
     transition: all 0.5s;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
+
+.deportes {
+    padding: 0;
+    margin: 0;
+}
+
+.futbol {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dedede;
+}
+
+.tenis {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dedede;
+}
+
+.automovilismo {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dedede;
+}
+
+.futbol img {
+    width: 50%;
+
+}
+
+
+.info {
+    width: 50%;
+    margin: 0 60px;
+}
+
+.info h2 {
+    font-size: 60px;
+
+}
+
+.info p {
+    font-size:25px;
+    margin-right: 100px;
+    padding-bottom: 3dvb;
+}
+
+.info a {
+    background-color: #232d4f;
+    color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+.info a:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.intro-deportes {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)), 
+        url(../img/03-deportes_3.png.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    color: #ffffff;
+    height: 80vh;
+}
+
+.intro-deportes h2 {
+    font-size: 60px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+}
+
+.deportes-resumen {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.deportes-resumen div {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.deportes-resumen div h3 {
+    font-size: 40px;
+    color: #ffffff;
+}
+.deportes-resumen div img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 32px rgba(100, 97, 97, 0.37);
+}
+
+.intro-deportes p {
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+    margin: 0 10%;
+}
+
+
 
 
 @media (max-width: 990px) {
-    .navbar ul li {
-        padding: 8px 20px;
-    }
-
-    .titulo {
-        margin: auto 5%;
-        padding: 20px 20px;
-    }
-
-    .titulo h1 {
-        font-size: 30px;
-    }
-
-    .titulo p {
-        font-size: 15px;
-    }
-
-    .cultura {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-@media (max-width: 400px) {
     .navbar ul{
         flex-direction: column;
         padding: 0;
@@ -201,11 +307,68 @@ body{
         padding: 20px 20px;
     }
 
-    .titulo h1 {
+    .titulo h2 {
         font-size: 25px;
     }
 
     .titulo p {
         font-size: 12px;
     }
+
+    .articulos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .deportes-resumen {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-deportes {
+        height: auto;
+    }
+
+    .futbol {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .futbol img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .info {
+        width: 100%;
+        margin: 0 0px;
+        text-align: center;
+    }
+
+    .tenis {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tenis img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .automovilismo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .automovilismo img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
 }

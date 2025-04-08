@@ -1,20 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/0a402da964.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Argentina</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <style>
+        .museo {
+            text-align: center;
+            background-color: #232d4f;
+            margin: 0;
+            border-top: 5px solid #cd870d;
+            border-bottom: 5px solid #cd870d;
+            color: #fff;
+        }
+
+        .museo-titulo h2 {
+            font-size: 60px;
+        }
+
+        .contenido {
+            display: flex ;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        .contenido p {
+            font-size: 30px;
+            margin: 20px 20%;
+        }
+
+        .contenido a {
+            padding: 20px 40px;
+            background-color: #2987ca;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            margin: 30px 0;
+        }
+
+        .contenido a:hover {
+            transform: scale(1.1);
+            transition: all 0.4s;
+        }
+
+        footer {
+            margin: 0;
+            text-align: center;
+            background-color: #dedede;
+        }
+
+        footer p {
+            font-size: 20px;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+
+    </style>
+
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
             <ul>
-                <li><a href="">Idioma</a></li>
-                <li><a href="">Literatura</a></li>
-                <li><a href="">Fiestas Nacionales</a></li>
-                <li><a href="">Musica</a></li>
+                <li><a href="#cultura">Cultura</a></li>
+                <li><a href="#deportes">Deportes</a></li>
+                <li><a href="#museos">Museos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
         <div class="encabezado">
@@ -27,7 +88,7 @@
     <main>
         <section class="cultura">
             <div class="titulo_cultura">
-                <h1>Cultura</h1>
+                <h2>Cultura</h2>
             </div>
             <div class="articulos">
                 <article class="idioma">
@@ -35,19 +96,8 @@
                         <i class="fa-solid fa-language"></i>
                         <h2>Idioma</h2>
                     </div>
-                    <p> idiomas en Argentina:
-
-                        Español:
-                        Es el idioma oficial y el más hablado en todo el país.
-                        Tiene variaciones dialectales y un acento distintivo.
-                        Lenguas indígenas:
-                        Existen diversas lenguas de los pueblos originarios, como el quechua, guaraní, mapudungun, qom y wichí.
-                        Existen 15 lenguas indigenas en Argentina.
-                        Lenguas de inmigrantes:
-                        Debido a la inmigración, se hablan también italiano, alemán, galés y yiddish, aunque su uso ha disminuido.
-                        Lunfardo:
-                        Es una jerga originaria de Buenos Aires, con palabras y expresiones propias.</p>
-                    <button><a href="https://www.argentina.gob.ar/pais/fiestas" target="_blank" >Saber más</a></button>
+                    <p>El idioma oficial de Argentina es el español, pero su variedad se distingue por el español rioplatense, caracterizado por el voseo (uso de "vos" en lugar de "tú") y un acento marcado, especialmente en Buenos Aires y alrededores.</p>
+                    <a href="https://es.wikipedia.org/wiki/Lenguas_de_Argentina" target="_blank">Saber más</a>
                 </article>
 
                 <article class="literatura">
@@ -55,19 +105,8 @@
                         <i class="fa-solid fa-book"></i>
                         <h2>Literatura</h2>
                     </div>
-                    <p>La literatura argentina, reflejo de su historia y cultura, se caracteriza por:
-
-                        Gauchesa:
-                        Desde el siglo XIX, con obras como "Martín Fierro", exploró la identidad nacional.
-                        Modernismo y vanguardia:
-                        A principios del siglo XX, autores como Lugones y Storni innovaron en la expresión literaria.
-                        Siglo XX:
-                        Figuras como Borges, Cortázar, Sábato y Bioy Casares destacaron a nivel mundial.
-                        Manuel Puig, que fue vanguardista al integrar en sus escritos los géneros masivos de su tiempo: cine y radionovela.
-                        Joaquín Salvador Lavado Tejón (Quino), con su personaje de Mafalda, que es considerado un símbolo de la Argentina.
-                        Contemporánea:
-                        Autores actuales como Almada, Cabezón Cámara y Enríquez, exploran temas sociales y políticos, con reconocimiento internacional.</p>
-                    <button><a href="https://www.argentina.gob.ar/pais/fiestas" target="_blank" >Saber más</a></button>
+                    <p>La literatura argentina es una de las más ricas de Latinoamérica, destacándose por su diversidad y profundidad. Autores como Jorge Luis Borges, Julio Cortázar y Ricardo Güiraldes han dejado un legado fundamental en la narrativa y poesía. Desde el gauchesco hasta el realismo mágico, las obras reflejan la identidad, historia y cultura del país..</p>
+                    <a href="https://es.wikipedia.org/wiki/Literatura_de_Argentina" target="_blank">Saber más</a>
                 </article>
 
                 <article class="fiestas">
@@ -75,21 +114,9 @@
                         <i class="fa-solid fa-champagne-glasses"></i>   
                         <h2>Fiestas Nacionales</h2>   
                     </div> 
-                    <p>En Argentina, las fiestas nacionales son días de gran importancia histórica y cultural, que conmemoran eventos clave en la formación del país. Aquí tienes un breve resumen de algunas de las más destacadas:
-
-                        25 de mayo: Día de la Revolución de Mayo.
-                        Conmemora la formación del Primer Gobierno Patrio en 1810, un paso crucial hacia la independencia de Argentina.
-                        20 de junio: Día de la Bandera.
-                        Se celebra en honor a Manuel Belgrano, creador de la bandera argentina, y se conmemora su fallecimiento.
-                        9 de julio: Día de la Independencia.
-                        Conmemora la declaración de independencia de Argentina en 1816, un momento fundamental en la historia del país.
-                        2 de abril: Día del Veterano y de los Caídos en la Guerra de Malvinas.
-                        Se conmemora a los veteranos y caídos en la guerra de las Malvinas.
-                        24 de marzo: Día de la Memoria por la Verdad y la Justicia.
-                        Se conmemora a los desaparecidos del Proceso de Reorganización Nacional.
-                        Estas festividades son ocasiones para reflexionar sobre la historia y la identidad argentina, y se celebran con diversos actos y conmemoraciones en todo el país.</p>  
+                    <p>Argentina celebra diversas fiestas que reflejan su cultura y tradiciones. Entre las más destacadas están el Carnaval de Gualeguaychú, famoso por sus comparsas, la Fiesta Nacional de la Vendimia en Mendoza, que celebra la cosecha del vino, y el Día de la Independencia el 9 de julio, con actos patrióticos en todo el país.</p>  
                     
-                    <button><a href="https://www.argentina.gob.ar/pais/fiestas" target="_blank" >Saber más</a></button>
+                    <a href="https://www.argentina.gob.ar/pais/fiestas" target="_blank" >Saber más</a>
                 </article>
 
                 <article class="musica">
@@ -97,38 +124,85 @@
                         <i class="fa-solid fa-music"></i>
                         <h2>Música</h2>
                     </div>
-                    <p>La música argentina es un crisol de influencias, con géneros que reflejan la rica historia y diversidad cultural del país. Aquí tienes un breve resumen:
-
-                        Tango:
-                        Nacido en los barrios de Buenos Aires, el tango es un género musical y baile apasionado, reconocido mundialmente.
-                        Figuras icónicas como Carlos Gardel y Astor Piazzolla han dejado un legado imborrable.
-                        Folclore:
-                        Con raíces en las tradiciones indígenas y europeas, el folclore argentino abarca una variedad de ritmos y estilos regionales, como la zamba, la chacarera y el chamamé.
-                        Mercedes Sosa es una de las mayores exponentes de este género.
-                        Rock Nacional:
-                        Surgido en la década de 1960, el rock argentino ha sido una voz importante de la cultura juvenil y la expresión social.
-                        Bandas y artistas como Charly García, Luis Alberto Spinetta y Soda Stereo han dejado una huella profunda.
-                        Otros géneros:
-                        Argentina también ha dado lugar a otros géneros populares como la cumbia, el cuarteto y el pop latino.
-                        La música clásica también a tenido grandes exponentes como Martha Argerich.
-                        En resumen, la música argentina es una expresión vibrante y diversa, que ha enriquecido el panorama musical latinoamericano y mundial.</p>
-                    <button><a href="https://www.argentina.gob.ar/pais/fiestas" target="_blank" >Saber más</a></button>
+                    <p>La música argentina es diversa y representa su identidad cultural. El tango, nacido en Buenos Aires, es su género más emblemático, mientras que el folclore refleja las raíces de cada región con zambas y chacareras. El rock nacional ha sido clave en la escena latinoamericana, con bandas icónicas como Soda Stereo.</p>
+                    <a href="https://www.argentina.gob.ar/pais/fiestas" target="_blank" >Saber más</a>
                 </article>
             </div>
         </section>
-        <nav>
-            <h3>
-                links
-                <a href="../contacto/contacto.html">Contacto</a>
-                <a href="../museos/museos.html">Museos</a>
-            </h3>
-        </nav>
-    </main>
 
+        <section class="deportes">
+            <div class="articulos-deportes">
+                <div class="intro-deportes">
+                    <h2>Deportes Argentinos</h2>
+
+                    <div class="deportes-resumen">
+
+                        <div class="dep1">
+                            <img src="img/messi.webp" alt="Messi" >
+                            <h3>Futbol</h3>
+                        </div>
+
+                        <div class="dep2">
+                            <img src="img/delpotro.jpg" alt="Martin del Potro">
+                            <h3>Tenis</h3>
+                        </div>
+
+                        <div class="dep3">
+                            <img src="img/S3K_b36XH_2000x1500__1.jpg" alt="Automovilismo">
+                            <h3>Automovilismo</h3>
+                        </div>
+
+                    </div>
+
+                    <p>
+                        Argentina es un país apasionado por el deporte, con el fútbol, el tenis y el automovilismo como sus disciplinas más representativas. Su historia, sus figuras icónicas y la emoción de las competencias han convertido al país en una referencia mundial en estas categorías.
+                    </p>
+                </div>
+
+                <article class="futbol">
+                    <div class="info">
+                        <h2>FUTBOL</h2>
+                        <p>El fútbol es el deporte más popular en Argentina, con una rica historia y una gran pasión. La selección nacional ha ganado la Copa del Mundo en tres ocasiones (1930, 1978 y 1986) y cuenta con jugadores legendarios como Diego Maradona y Lionel Messi. La rivalidad entre Boca Juniors y River Plate es una de las más intensas del mundo.</p>
+                        <a href="https://es.wikipedia.org/wiki/Primera_Divisi%C3%B3n_de_Argentina">INFORMACION</a>
+                    </div>
+                    <img src="img/DUOMNI7QSZBJ6SEPGBJ4LQPZCA.jpg" alt="Argenitna vs Francia" width="50%" height="700px">
+                </article>
+
+                <article class="tenis">
+                    <img src="img/del-potro-us-open-2018-day-nine-1.jpg" alt="Del Potro Open 2018" width="50%" height="700px">
+                    <div class="info">
+                        <h2>TENIS</h2>
+                        <p>El tenis en Argentina tiene una rica historia y una fuerte presencia en el circuito internacional. Grandes figuras como Guillermo Vilas, Gabriela Sabatini, David Nalbandian y Juan Martín del Potro</p>
+                        <a href="https://es.wikipedia.org/wiki/Tenis_en_Argentina">INFORMACION</a>
+                    </div>
+                </article>
+
+                <article class="automovilismo">
+                    <div class="info">
+                        <h2>AUTOMOVILISMO</h2>
+                        <p>El automovilismo en Argentina es una pasión nacional con una rica historia y grandes figuras. Argentina ha dado al mundo grandes pilotos como Juan Manuel Fangio, cinco veces campeón de Fórmula 1, y Carlos Reutemann, quien también brilló en la máxima categoría.</p>
+                        <a href="https://es.wikipedia.org/wiki/Automovilismo_en_Argentina">INFORMACION</a>
+                    </div>
+                        <img src="img/50140.jpg" alt="" width="50%" height="700px">
+                </article>
+            </div>
+        </section>
+
+        <section class="museo">
+            <div class="museo-titulo">
+                <h2>Museos de argentina</h2>
+            </div>  
+            <div class="contenido">
+                <p>Argentina cuenta con una amplia variedad de museos que reflejan su historia, arte y cultura. Desde espacios dedicados al patrimonio nacional hasta colecciones de arte moderno, cada museo ofrece una ventana a la identidad del país.</p>
+                <a href="../contacto/contacto.html">MAS INFORMACION</a>
+                <img src="img/pngtree-museum-modern-building-cartoon-png-image_9121385.png" alt="Museo">
+            </div>
+
+        </section>
+
+    </main>
     <footer>
         <p>&copy Derechos Reservados 2025</p>   
     </footer>
-
->>>>>>> 944c8814884eb31c409956115e0638749563ef27
 </body>
 </html>
